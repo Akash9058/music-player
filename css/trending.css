@@ -1,0 +1,261 @@
+main{
+    background-color: black;
+    color: white;
+    width: 70%;
+}
+body{
+     background-color: black;
+    color: white;
+    margin-bottom: 80px;
+}
+.trending{
+    /* position: absolute; */
+    padding-top: 130px;
+    height: 350px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-left: 60px;
+}
+
+.trending img{
+    width: 220px;
+    height: 220px;
+    transition: 0.5s;
+    border-radius:6px ;
+}
+
+.trending img:hover{
+    height: 300px ;
+    width: 300px;
+}
+
+.heading-album{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:unset;
+    font-weight: 400;
+}
+/* latest */
+
+.latest{
+    display: grid;
+    margin-left: 35px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 99%;
+}
+
+.album{
+    display: flex;
+    margin-top: 10px;
+    width: 300px;
+    align-items: center;
+    cursor: pointer;
+}
+.album img{
+    /* height: 100px; */
+    width: 150px;
+}
+
+.album img:hover{
+    box-shadow: 4px 4px 27px #242020;
+}
+.album-info p{
+    width:150px;
+    margin-bottom:5px;
+    padding-left: 20px;
+}
+.album-info .album-name{
+    font-size :18px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.album-stats{
+    font-size: 13px;
+    color:#19609b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.album i{
+    position: relative;
+    margin-top: -100px;
+    margin-left: 70px;
+}
+
+.album i:hover .dropdown {
+  display: inline-block;
+}
+
+
+.dropdown{
+    width: 120px;
+    position: absolute;
+    left:-80px;
+    background-color: grey;
+    display: none;
+    transition: opacity 0.3s;
+    color: black;
+    border-radius: 2px;
+}
+.dropdown p {
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dropdown p:hover {
+  background-color: rgb(72, 80, 72);
+}
+.artists{
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    width: 68%;
+}
+.artists img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 4px;
+}
+.see-all{
+    position: relative;
+    margin-left: 90%;
+    font-size: 15px;
+    font-weight: 300;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: grey;
+    cursor: pointer;
+}
+/* card */
+.card-container{
+     display: flex;
+     flex-direction: column;
+    
+}
+.sound{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 230px;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color:#110f0f;
+    border-radius: 8px;
+}
+.card:hover{
+    cursor: pointer;
+    background-color:rgb(36, 32, 32) ;
+    transition: 0.35s;
+}
+.card .card-img{
+     padding: 15px 15px 15px 15px;
+}
+.card .card-img img{
+    width: 200px;
+    
+    border-radius: 5px;
+    transition: all 0.35s ease 0s;
+}
+
+.card-img img:hover{
+    cursor: pointer;
+    padding: 5px; 
+     border-radius: 5px;
+ 
+}
+.card h3{
+   padding: 0px 15px;
+    font-weight: 300;
+}
+
+.card card-title{
+    font-size: 14px;
+    font-weight: 600;
+}
+.card .desc{
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: grey;
+}
+.card p{
+   
+    padding: 0px 15px;
+}
+
+/* music player */
+.music-player{
+    display: flex;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left:12%;
+    background:linear-gradient(to bottom, #000000 1%, #031c27 100%);
+    width: 70%;
+    border-radius: 40px;
+}
+.music-player:hover{
+    background:linear-gradient( #272626 1%, #031c27 100%);
+}
+.leftside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: 5%;
+}
+
+.leftside img{
+    height: 100%;
+    padding: 10px;
+    border: 3px;
+
+}
+.song-detail{
+    margin: 5px;
+
+}
+.song-detail .song-title{
+   font-size: 16px;
+   font-weight: 400;
+   font-style: inherit;
+
+}
+
+.song-detail .artist-name a{
+    color:grey;
+    font-size: 15px;
+}
+.leftside i{
+    color: grey;
+    margin: 10px;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:6%
+}
+.middle audio{
+    width: 600px;
+    height: 40px;
+}
+.middle i{
+    margin-left: 20px;
+}
+.middle i:hover{
+    cursor: pointer;
+
+}

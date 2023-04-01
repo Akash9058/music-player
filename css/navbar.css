@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar-container {
+    height: 60px;
+   
+    width: 100%;
+    display: flex;
+    background-image: url('../assests/universe.jpg');
+    color: aliceblue;
+     position: fixed;
+    z-index: 0;
+    /* padding: 5px;
+    margin: 4px; */
+}
+
+/* left section */
+@media screen and (max-width: 572px) {
+    .left-side {
+        width: 20%;
+    }
+}
+
+.left-side {
+
+    display: flex;
+    flex-shrink: 1;
+    /* justify-content: space-around; */
+    padding-top: 15px;
+    margin-left: 4%;
+    padding: 3px;
+}
+
+
+.left-side h3 {
+    font-family: cursive;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    margin-left: 4%;
+    margin-right: 40%;
+    margin-top: 7px;
+}
+
+.left-side h3 .logo-text {
+    color: red;
+    font-size: 25px;
+    display: block;
+    font-weight: 400;
+}
+
+.left-side p {
+    color: blue;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.left-side p:hover {
+    cursor: pointer;
+    color: red;
+}
+
+
+
+
+/* right section */
+
+.right-side {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-shrink: 1;
+    /* justify-content: space-around; */
+    margin-left: 30%;
+    justify-content: end;
+}
+
+.right-side .search-input {
+    background-color: white;
+    height: 50%;
+    width: 14%;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    display: flex;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.right-side img {
+    height: 100%;
+    width: 20px;
+    margin: 2px;
+}
+
+.search-image {
+    display: inline;
+    /* padding: 5; */
+    border: 0;
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 5px;
+    width: 80%;
+}
+
+/* notification */
+
+.notification-container {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+
+.notification-container i {
+    margin-top: 20px;
+}
+
+.notification {
+    position: absolute;
+    background-color: rgb(182, 6, 6);
+    color: white;
+    font-size: 8px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    top: 35%;
+    right: -40%;
+    text-align: center;
+    padding: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right-side .profile-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 80%;
+    position: absolute;
+    /* margin-left: 30px; */
+    right: 2%;
+    margin-top: 7px;
+    /* margin-right: 40px; */
+}
